@@ -1,0 +1,15 @@
+---
+- name: install tomcat
+  hosts: all
+  become: true
+
+  tasks:
+- name: create directory
+  file:
+    path: /opt/tomcat
+    state: directory
+
+- name: install tomcat
+  get_url:
+    url: https://tomcat.apache.org/tomcat-7.0-doc/api/org/apache/tomcat/util/net/URL.html
+    dest: /opt/tomcat

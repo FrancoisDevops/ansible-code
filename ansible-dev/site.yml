@@ -1,0 +1,10 @@
+---
+- hosts: wind
+  roles:
+
+    - role: link
+      my-url: https://download.virtualbox.org/virtualbox/7.0.18-162988-win
+      dest_path: C:\Users\Administrator\Desktop\francois
+    
+    
+    

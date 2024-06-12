@@ -1,0 +1,12 @@
+--- 
+- name: install stuff
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: install wget
+    package: 
+      state: present
+      name: 
+        - wget
+        - curl
